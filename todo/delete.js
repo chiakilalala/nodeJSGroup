@@ -7,7 +7,7 @@ const deleteList = (res) => {
 
   successHandle({
     res,
-    message: '§R°£¦Cªí¦¨¥\',
+    message: 'åˆªé™¤åˆ—è¡¨æˆåŠŸ',
     data: DB
   })
 }
@@ -18,13 +18,13 @@ const deleteItem = (req, res) => {
 
   if (deleteItemIndex < 0) return errorHandle({
     res,
-    message: '¸ê®Æ¿ù»~ or ¤£¦s¦bªº id ¸ê®Æ'
+    message: 'è³‡æ–™éŒ¯èª¤ or ä¸å­˜åœ¨çš„ id è³‡æ–™'
   })
 
   DB.splice(deleteItemIndex, 1)
   successHandle({
     res,
-    message: '§R°£¶µ¥Ø¦¨¥\',
+    message: 'åˆªé™¤é …ç›®æˆåŠŸ',
     data: DB
   })
 }
